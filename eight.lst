@@ -1,0 +1,538 @@
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> select compute_Total('207') from Dual;
+
+COMPUTE_TOTAL('207')                                                            
+--------------------                                                            
+                   0                                                            
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> select compute_Total('207') from Dual;
+
+COMPUTE_TOTAL('207')                                                            
+--------------------                                                            
+                   0                                                            
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION COMPUTE_TOTAL:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+3/1      PLS-00103: Encountered the symbol "IS" when expecting one of the       
+         following:                                                             
+         constant exception <an identifier>                                     
+         <a double-quoted delimited-identifier> table long double ref           
+         char time timestamp interval date binary national character            
+         nchar                                                                  
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION COMPUTE_TOTAL:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+17/17    PLS-00103: Encountered the symbol "AS" when expecting one of the       
+         following:                                                             
+         . ( * @ % & = - + ; < / > at in is mod remainder not rem               
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || multiset member submultiset                     
+         The symbol ". was inserted before "AS" to continue.                    
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION COMPUTE_TOTAL:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/24     PLS-00103: Encountered the symbol "AS" when expecting one of the       
+         following:                                                             
+         ( return compress compiled wrapped                                     
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> select compute_Total('207') from Dual;
+
+COMPUTE_TOTAL('207')                                                            
+--------------------                                                            
+                   0                                                            
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 21-DEC-19 02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1 06-JUN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION COMPUTE_TOTAL:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+26/11    PLS-00103: Encountered the symbol "=" when expecting one of the        
+         following:                                                             
+         := . ( @ % ;                                                           
+         The symbol ":= was inserted before "=" to continue.                    
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> select compute_Total('206') from Dual;
+
+COMPUTE_TOTAL('206')                                                            
+--------------------                                                            
+                  10                                                            
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql
+
+Function created.
+
+No errors.
+SQL> select compute_Total('206') from Dual;
+
+COMPUTE_TOTAL('206')                                                            
+--------------------                                                            
+                  10                                                            
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> select compute_Total('206') from Dual;
+
+COMPUTE_TOTAL('206')                                                            
+--------------------                                                            
+                  34                                                            
+
+SQL> select * from StoreItems;
+
+ITEMID          PRICE                                                           
+---------- ----------                                                           
+001             30.03                                                           
+002              35.2                                                           
+003               1.5                                                           
+004             78.55                                                           
+005            109.66                                                           
+006             23.97                                                           
+
+6 rows selected.
+
+SQL> select compute_Total('201') from Dual;
+
+COMPUTE_TOTAL('201')                                                            
+--------------------                                                            
+                  40                                                            
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION COMPUTE_TOTAL:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+2/16     PLS-00103: Encountered the symbol "(" when expecting one of the        
+         following:                                                             
+         . @ % ; is authid as cluster order using external character            
+         deterministic parallel_enable pipelined aggregate                      
+         result_cache                                                           
+                                                                                
+3/1      PLS-00103: Encountered the symbol "IS" when expecting one of the       
+         following:                                                             
+         , * & - + / at mod remainder rem <an identifier>                       
+         <a double-quoted delimited-identifier> <an exponent (**)> as           
+         from into || multiset bulk year day                                    
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+                                                                                
+50/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION COMPUTE_TOTAL:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+2/15     PLS-00103: Encountered the symbol "(" when expecting one of the        
+         following:                                                             
+         . @ % ; is authid as cluster order using external character            
+         deterministic parallel_enable pipelined aggregate                      
+         result_cache                                                           
+                                                                                
+3/1      PLS-00103: Encountered the symbol "IS" when expecting one of the       
+         following:                                                             
+         , * & - + / at mod remainder rem <an identifier>                       
+         <a double-quoted delimited-identifier> <an exponent (**)> as           
+         from into || multiset bulk year day                                    
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+                                                                                
+50/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> select compute_Total('201') from Dual;
+
+COMPUTE_TOTAL('201')                                                            
+--------------------                                                            
+               40.03                                                            
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION COMPUTE_TOTAL:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+48/2     PLS-00103: Encountered the symbol "END" when expecting one of the      
+         following:                                                             
+         . ( * @ % & = - + ; < / > at in is mod remainder not rem               
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+         The symbol ";" was substituted for "END" to continue.                  
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION COMPUTE_TOTAL:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+48/2     PLS-00103: Encountered the symbol "END" when expecting one of the      
+         following:                                                             
+         . ( * @ % & = - + ; < / > at in is mod remainder not rem               
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+         The symbol ";" was substituted for "END" to continue.                  
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION COMPUTE_TOTAL:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+47/12    PLS-00103: Encountered the symbol "=" when expecting one of the        
+         following:                                                             
+         := . ( @ % ;                                                           
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION COMPUTE_TOTAL:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+48/2     PLS-00103: Encountered the symbol "END" when expecting one of the      
+         following:                                                             
+         . ( * @ % & = - + ; < / > at in is mod remainder not rem               
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+         The symbol ";" was substituted for "END" to continue.                  
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> select * from StoreItems;
+
+ITEMID          PRICE                                                           
+---------- ----------                                                           
+001             30.03                                                           
+002              35.2                                                           
+003               1.5                                                           
+004            178.55                                                           
+005            109.66                                                           
+006             23.97                                                           
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> select compute_Total('204') from Dual;
+
+COMPUTE_TOTAL('204')                                                            
+--------------------                                                            
+              178.55                                                            
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> select compute_Total('204') from Dual;
+
+COMPUTE_TOTAL('204')                                                            
+--------------------                                                            
+             160.695                                                            
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> select compute_Total('204') from Dual;
+
+COMPUTE_TOTAL('204')                                                            
+--------------------                                                            
+           168.72975                                                            
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/com_Tot.sql;
+
+Function created.
+
+No errors.
+SQL> select compute_Total('204') from Dual;
+
+COMPUTE_TOTAL('204')                                                            
+--------------------                                                            
+           168.72975                                                            
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/mass_Details.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE MASS_DETAILS:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/55     PLS-00103: Encountered the symbol "START" when expecting one of        
+         the following:                                                         
+         <an identifier> <a double-quoted delimited-identifier>                 
+         current delete exists prior                                            
+         The symbol "<an identifier> was inserted before "START" to             
+         continue.                                                              
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/mass_Details.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE MASS_DETAILS:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/55     PLS-00103: Encountered the symbol "START" when expecting one of        
+         the following:                                                         
+         <an identifier> <a double-quoted delimited-identifier>                 
+         current delete exists prior                                            
+         The symbol "<an identifier> was inserted before "START" to             
+         continue.                                                              
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/mass_Details.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE MASS_DETAILS:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/55     PLS-00103: Encountered the symbol "START" when expecting one of        
+         the following:                                                         
+         <an identifier> <a double-quoted delimited-identifier>                 
+         current delete exists prior                                            
+         The symbol "<an identifier> was inserted before "START" to             
+         continue.                                                              
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/mass_Details.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/mass_Details.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec mass_Details('401','21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> spool off;

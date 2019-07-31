@@ -1,0 +1,30 @@
+
+                                                                                                                                              Master Owl Store                                                                                                                                              
+Customer ID          Orders I Item ID    Name                                               Phone/Email                                        Address                                            Title                                                Price NoItems Ordered   Shipped          Tax         
+-------------------- -------- ---------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ------- ------- --------- --------- ----------         
+Shipping Fee GRAND TOTAL                                                                                                                                                                                                                                                                                    
+------------ -----------                                                                                                                                                                                                                                                                                    
+401                  201      001        Bob Din                                            bob@yoyo.com                                       SJ                                                 enders game                                         $30.03       1 02-JAN-19                    6         
+      $10.00         120                                                                                                                                                                                                                                                                                    
+401                  202      002        Bob Din                                            bob@yoyo.com                                       SJ                                                 the bible                                           $35.20       1 20-JAN-19 06-JUN-19        7.5         
+      $10.00         150                                                                                                                                                                                                                                                                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                DIEGO RAIGOZA                                                                                                                                               

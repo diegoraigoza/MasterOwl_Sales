@@ -1,0 +1,1358 @@
+SQL> select * from AlphaCoEmp;
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Maher                     assistant                600000                       
+Messina                   advisor                  130000                       
+Newell                    assistant                600000                       
+Noel                      intern                     5000                       
+Oleske                    advisor                  130000                       
+Page                      intern                     5000                       
+Psaki                     assistant                600000                       
+Reinstein                 advisor                  130000                       
+Roche                     director                 100000                       
+Rouse                     advisor                  130000                       
+Sathe                     advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Schulman                  director                 100000                       
+Seymour                   assistant                600000                       
+Shapiro                   advisor                  130000                       
+Shaw                      assistant                600000                       
+Sher                      director                 100000                       
+Showers                   intern                     5000                       
+Siegel                    advisor                  130000                       
+Sirbu                     manager                  500000                       
+Stephens                  assistant                600000                       
+Sutton                    assistant                600000                       
+Terry                     director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Vanderslice               intern                     5000                       
+Adams                     advisor                  130000                       
+Alley                     advisor                  130000                       
+Anello                    director                 100000                       
+Barnes                    intern                     5000                       
+Bates                     advisor                  130000                       
+Bedingfield               intern                     5000                       
+Chaifetz                  director                 100000                       
+Clarke                    advisor                  130000                       
+Cobbina                   intern                     5000                       
+Crutchfield               intern                     5000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Dalheim                   advisor                  130000                       
+Ealons                    director                 100000                       
+Escobar                   director                 100000                       
+Farrell                   assistant                600000                       
+Gaspard                   assistant                600000                       
+Groth                     assistant                600000                       
+Heimbach                  director                 100000                       
+Jawando                   director                 100000                       
+Kennedy                   intern                     5000                       
+Konwinski                 advisor                  130000                       
+Lewis                     director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Liddell-Westefeld         advisor                  130000                       
+Limon                     assistant                600000                       
+Loeb                      intern                     5000                       
+London                    director                 100000                       
+White                     intern                     5000                       
+Lynn                      manager                  500000                       
+Mackey                    assistant                600000                       
+McCarthy                  intern                     5000                       
+McGuire                   intern                     5000                       
+Mueller                   assistant                600000                       
+Onek                      intern                     5000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Papas                     assistant                600000                       
+Paulsen                   director                 100000                       
+Raizk                     manager                  500000                       
+Sahgal                    director                 100000                       
+Schafer                   advisor                  130000                       
+Sibley                    director                 100000                       
+Starkey                   manager                  500000                       
+Tamarin                   director                 100000                       
+Tchen                     director                 100000                       
+Agnew                     director                 100000                       
+Beliveau                  assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Brennan                   manager                  500000                       
+Buffett                   director                 100000                       
+Cherlin                   intern                     5000                       
+Cokley                    assistant                600000                       
+Cuellar                   intern                     5000                       
+Deese                     director                 100000                       
+Dorsett                   director                 100000                       
+Fernandez                 intern                     5000                       
+Frankel                   advisor                  130000                       
+Gonzalez                  manager                  500000                       
+Hoang                     advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Inouye                    intern                     5000                       
+Larus                     assistant                600000                       
+Watson                    advisor                  130000                       
+Wright                    advisor                  130000                       
+Martin                    manager                  500000                       
+Mattson                   advisor                  130000                       
+Milakofsky                intern                     5000                       
+Miranda                   advisor                  130000                       
+Muntz                     advisor                  130000                       
+Pojman                    manager                  500000                       
+Rodriguez                 director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Thomas                    intern                     5000                       
+Browner                   manager                  500000                       
+Brundage                  assistant                600000                       
+Chen                      advisor                  130000                       
+Chiodo                    assistant                600000                       
+Crowley                   advisor                  130000                       
+Devine                    intern                     5000                       
+Edgerton                  manager                  500000                       
+Eisen                     manager                  500000                       
+Favreau                   intern                     5000                       
+Gillette                  intern                     5000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Gomez                     advisor                  130000                       
+Grant                     director                 100000                       
+Harper                    intern                     5000                       
+Hurwitz                   advisor                  130000                       
+Kammerer                  director                 100000                       
+Kommareddi                manager                  500000                       
+Kravis                    intern                     5000                       
+Lerner                    intern                     5000                       
+Lippert                   advisor                  130000                       
+Lu                        manager                  500000                       
+Narechania                assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Pipkins                   advisor                  130000                       
+Posey                     assistant                600000                       
+Richardson                manager                  500000                       
+Roach                     assistant                600000                       
+Samuels                   advisor                  130000                       
+Schmuck                   assistant                600000                       
+Skoczek                   advisor                  130000                       
+Trainor                   director                 100000                       
+Turk                      advisor                  130000                       
+Valencia                  director                 100000                       
+Ayling                    assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Binns                     assistant                600000                       
+Bond                      assistant                600000                       
+Branch                    assistant                600000                       
+Brown                     manager                  500000                       
+Carter                    intern                     5000                       
+Cohen                     director                 100000                       
+Dunn                      director                 100000                       
+Emanuel                   intern                     5000                       
+Greene                    advisor                  130000                       
+Hernandez                 advisor                  130000                       
+Hogan                     assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Koo                       advisor                  130000                       
+Lartey                    assistant                600000                       
+Leitner-Laserna           assistant                600000                       
+Lezotte                   advisor                  130000                       
+Liegel                    manager                  500000                       
+Wade                      director                 100000                       
+McGrath                   director                 100000                       
+Metcalf                   advisor                  130000                       
+Neralla                   manager                  500000                       
+Papa                      intern                     5000                       
+Phadke                    director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Pulliam                   intern                     5000                       
+Smoot                     assistant                600000                       
+Stoev                     intern                     5000                       
+Stone                     intern                     5000                       
+Sweeney                   manager                  500000                       
+Tennison                  assistant                600000                       
+Terrell                   advisor                  130000                       
+Albino                    director                 100000                       
+Baldassaro                assistant                600000                       
+Beinart                   assistant                600000                       
+Coven                     assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Cuba                      intern                     5000                       
+DeGuzman                  director                 100000                       
+Fenn                      advisor                  130000                       
+Finlen                    assistant                600000                       
+Fitts                     manager                  500000                       
+Gage                      intern                     5000                       
+Hanson                    advisor                  130000                       
+Hash                      advisor                  130000                       
+Jackson                   advisor                  130000                       
+Jarvis-Shean              advisor                  130000                       
+Kalbaugh                  director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Kale                      manager                  500000                       
+Levine                    advisor                  130000                       
+Webster                   manager                  500000                       
+Young                     advisor                  130000                       
+Markovitz                 assistant                600000                       
+McNeal                    intern                     5000                       
+Monteiro                  advisor                  130000                       
+Neiman                    director                 100000                       
+Offerman                  director                 100000                       
+Olson                     director                 100000                       
+Pate                      director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Rivadeneira               assistant                600000                       
+Robertson                 manager                  500000                       
+Sabochik                  assistant                600000                       
+Sanders                   assistant                600000                       
+Shah                      advisor                  130000                       
+Strautmanis               intern                     5000                       
+Thorbjornsen              advisor                  130000                       
+Tucci                     manager                  500000                       
+Bassin                    intern                     5000                       
+Burman                    advisor                  130000                       
+Carden                    advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+DuBois                    advisor                  130000                       
+Earnest                   director                 100000                       
+Garcia                    assistant                600000                       
+Hornsby                   director                 100000                       
+Hurley                    advisor                  130000                       
+Kim                       assistant                600000                       
+Kramer                    director                 100000                       
+Leger                     director                 100000                       
+Wang-Levine               director                 100000                       
+Witt                      intern                     5000                       
+Mehrbani                  director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Millison                  manager                  500000                       
+Nabors                    manager                  500000                       
+Northern                  assistant                600000                       
+Rathod                    advisor                  130000                       
+Santucci                  intern                     5000                       
+Schaub                    advisor                  130000                       
+Tate-Gilmore              assistant                600000                       
+Abrams                    intern                     5000                       
+Attili                    advisor                  130000                       
+Bernard                   director                 100000                       
+Burton                    assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Campoverdi                assistant                600000                       
+Castillo                  intern                     5000                       
+Conrad                    director                 100000                       
+DeParle                   assistant                600000                       
+Droege                    advisor                  130000                       
+Flatgard                  intern                     5000                       
+Freeman                   advisor                  130000                       
+Goodman                   director                 100000                       
+Jarvis                    advisor                  130000                       
+Jones                     director                 100000                       
+Kocher                    manager                  500000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lechtenberg               assistant                600000                       
+Lesser                    director                 100000                       
+Walsh                     intern                     5000                       
+Luck                      manager                  500000                       
+Mack                      advisor                  130000                       
+Mayekar                   director                 100000                       
+Millett                   director                 100000                       
+Nguyen                    director                 100000                       
+Perez                     advisor                  130000                       
+Roddick                   director                 100000                       
+Rundlet                   director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Sobel                     assistant                600000                       
+Stracko                   intern                     5000                       
+Utech                     assistant                600000                       
+Vale                      manager                  500000                       
+Andrias                   intern                     5000                       
+Baggetto                  intern                     5000                       
+Bisi                      advisor                  130000                       
+Blount                    director                 100000                       
+Brooke                    assistant                600000                       
+Campbell                  advisor                  130000                       
+Canery                    advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Dale                      assistant                600000                       
+Finkenbinder              advisor                  130000                       
+Furman                    manager                  500000                       
+Hable                     director                 100000                       
+Higginbottom              director                 100000                       
+Johnston                  advisor                  130000                       
+Keenan                    assistant                600000                       
+Kohnke                    assistant                600000                       
+Lipsky                    advisor                  130000                       
+Whitty                    assistant                600000                       
+Wilson                    advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Wong                      intern                     5000                       
+Wear                      assistant                600000                       
+Yeager Kaplan             advisor                  130000                       
+McGinnis                  assistant                600000                       
+Mosteller                 assistant                600000                       
+Murtha                    manager                  500000                       
+Parker                    manager                  500000                       
+Quinn                     director                 100000                       
+Reed                      director                 100000                       
+Ryan                      advisor                  130000                       
+Sass                      assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Schwartz                  assistant                600000                       
+Singiser                  intern                     5000                       
+Swanson                   director                 100000                       
+Turton                    assistant                600000                       
+Bauer                     director                 100000                       
+Bhowmik                   director                 100000                       
+Carrier                   manager                  500000                       
+Cizner                    assistant                600000                       
+Colvin                    director                 100000                       
+Cutter                    advisor                  130000                       
+Dillon                    advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Donilon                   assistant                600000                       
+Frank                     intern                     5000                       
+Frye                      director                 100000                       
+Graham                    advisor                  130000                       
+Hopkins                   advisor                  130000                       
+Johnson                   director                 100000                       
+Voorman                   manager                  500000                       
+Lovett                    advisor                  130000                       
+Massey                    director                 100000                       
+McDonough                 director                 100000                       
+Mu??oz                    advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Odio                      assistant                600000                       
+Pope                      assistant                600000                       
+Sutphen                   director                 100000                       
+Asen                      manager                  500000                       
+Belive                    intern                     5000                       
+Brush                     director                 100000                       
+Cardwell                  manager                  500000                       
+Corrigan                  assistant                600000                       
+Davies                    director                 100000                       
+Edmonds                   assistant                600000                       
+Espinel                   advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Gardaphe                  advisor                  130000                       
+Gottry                    manager                  500000                       
+Green                     advisor                  130000                       
+Hughes                    intern                     5000                       
+Juska                     advisor                  130000                       
+Kimball                   intern                     5000                       
+LaBolt                    advisor                  130000                       
+Lewin                     advisor                  130000                       
+Zichal                    director                 100000                       
+Naidoff                   director                 100000                       
+Oxtoby                    advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Portilla                  director                 100000                       
+Rittner                   intern                     5000                       
+Ruemmler                  director                 100000                       
+Simas                     intern                     5000                       
+Spencer                   director                 100000                       
+Tranchin                  advisor                  130000                       
+Vogel                     advisor                  130000                       
+Becnel                    manager                  500000                       
+Birdsall                  assistant                600000                       
+Brewer                    intern                     5000                       
+Campos                    director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Claude                    advisor                  130000                       
+Davis                     manager                  500000                       
+Edwards                   director                 100000                       
+Faulman                   advisor                  130000                       
+Hegde                     director                 100000                       
+Hiatt                     advisor                  130000                       
+Kochman                   director                 100000                       
+Krass                     director                 100000                       
+Lelyveld                  assistant                600000                       
+Lillie                    director                 100000                       
+Love                      intern                     5000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Maska                     intern                     5000                       
+Mrazek                    intern                     5000                       
+Paige                     assistant                600000                       
+Pfeiffer                  advisor                  130000                       
+Schuker                   director                 100000                       
+Stickel                   director                 100000                       
+Summers                   director                 100000                       
+Teehee                    assistant                600000                       
+Tucker                    assistant                600000                       
+Anderson                  manager                  500000                       
+Blake                     advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Chambers                  advisor                  130000                       
+Cunningham                manager                  500000                       
+DeRosa                    advisor                  130000                       
+Fiscus                    advisor                  130000                       
+Ford                      advisor                  130000                       
+Gray                      director                 100000                       
+Harris                    assistant                600000                       
+Jabbour                   manager                  500000                       
+Jarrett                   intern                     5000                       
+Jean-Pierre               intern                     5000                       
+Kelly                     advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Watkins                   assistant                600000                       
+Zelman                    advisor                  130000                       
+McBride                   assistant                600000                       
+Nathan                    advisor                  130000                       
+Ocampo                    assistant                600000                       
+Olmos                     assistant                600000                       
+Ortiz                     advisor                  130000                       
+Pourmorad                 assistant                600000                       
+Rosalsky                  assistant                600000                       
+Schiliro                  director                 100000                       
+Sheehy                    advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Swire                     advisor                  130000                       
+Tubman                    advisor                  130000                       
+Vietor                    intern                     5000                       
+Bressler                  director                 100000                       
+Douglas                   intern                     5000                       
+Dyer                      manager                  500000                       
+Firestone                 intern                     5000                       
+Hennigan                  assistant                600000                       
+Jamison                   advisor                  130000                       
+King                      director                 100000                       
+Lee                       director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lepow                     director                 100000                       
+Lorjuste                  intern                     5000                       
+McCathran                 assistant                600000                       
+Moilanen                  assistant                600000                       
+Nelson                    advisor                  130000                       
+Reeves                    advisor                  130000                       
+Saunders                  director                 100000                       
+Sinha                     assistant                600000                       
+Verrilli                  intern                     5000                       
+Axelrod                   director                 100000                       
+Beverly                   advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Camu??ez                  assistant                600000                       
+Chhabra                   director                 100000                       
+Cusack                    director                 100000                       
+Donovan                   manager                  500000                       
+Fernkas                   assistant                600000                       
+Godfrey                   advisor                  130000                       
+Greenawalt                intern                     5000                       
+Jung                      advisor                  130000                       
+Kumar                     manager                  500000                       
+Ledbetter                 advisor                  130000                       
+Lipton                    assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Winter                    advisor                  130000                       
+Mastromonaco              director                 100000                       
+McLaughlin                advisor                  130000                       
+Odintz                    intern                     5000                       
+Roberts                   advisor                  130000                       
+Setser                    advisor                  130000                       
+Stoneman                  manager                  500000                       
+Tseggai                   advisor                  130000                       
+Vega                      director                 100000                       
+Amorsingh                 director                 100000                       
+Block                     advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Bookey-Baker              assistant                600000                       
+Burnough                  manager                  500000                       
+Cushman                   manager                  500000                       
+Fergenson                 director                 100000                       
+Gibbs                     advisor                  130000                       
+Gottlieb                  director                 100000                       
+Hitchcock                 advisor                  130000                       
+Kang                      intern                     5000                       
+Kiley                     manager                  500000                       
+Lehrich                   advisor                  130000                       
+Weiser                    assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Williams                  assistant                600000                       
+mickeymouse               advisor                                               
+
+420 rows selected.
+
+SQL> select * from Emp_Work;
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Abrams                                                                          
+Adams                                                                           
+Agnew                                                                           
+Albino                                                                          
+Alley                                                                           
+Amorsingh                                                                       
+Anderson                                                                        
+Andrias                                                                         
+Anello                                                                          
+Asen                                                                            
+Attili                                                                          
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Axelrod                                                                         
+Ayling                                                                          
+Gage                                                                            
+Garcia                                                                          
+Gardaphe                                                                        
+Gaspard                                                                         
+Gibbs                                                                           
+Gillette                                                                        
+Godfrey                                                                         
+Gomez                                                                           
+Gonzalez                                                                        
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Goodman                                                                         
+Gottlieb                                                                        
+Gottry                                                                          
+Graham                                                                          
+Grant                                                                           
+Gray                                                                            
+Green                                                                           
+Greenawalt                                                                      
+Greene                                                                          
+Groth                                                                           
+Sabochik                                                                        
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Sahgal                                                                          
+Samuels                                                                         
+Sanders                                                                         
+Santucci                                                                        
+Sass                                                                            
+Sathe                                                                           
+Saunders                                                                        
+Schafer                                                                         
+Schaub                                                                          
+Schiliro                                                                        
+Schmuck                                                                         
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Schuker                                                                         
+Schulman                                                                        
+Schwartz                                                                        
+Setser                                                                          
+Seymour                                                                         
+Shah                                                                            
+Shapiro                                                                         
+Shaw                                                                            
+Sheehy                                                                          
+Sher                                                                            
+Showers                                                                         
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Sibley                                                                          
+Siegel                                                                          
+Simas                                                                           
+Singiser                                                                        
+Sinha                                                                           
+Sirbu                                                                           
+Skoczek                                                                         
+Smoot                                                                           
+Sobel                                                                           
+Spencer                                                                         
+Starkey                                                                         
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Stephens                                                                        
+Stickel                                                                         
+Stoev                                                                           
+Stone                                                                           
+Stoneman                                                                        
+Stracko                                                                         
+Strautmanis                                                                     
+Summers                                                                         
+Sutphen                                                                         
+Sutton                                                                          
+Swanson                                                                         
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Sweeney                                                                         
+Swire                                                                           
+
+79 rows selected.
+
+SQL> select * from EmpStats;
+
+no rows selected
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+4/2      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+4/62     PLS-00103: Encountered the symbol "COMICBOOK" when expecting one       
+         of the following:                                                      
+         (                                                                      
+                                                                                
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+7/2      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+7/60     PLS-00103: Encountered the symbol "CUSTOMER1" when expecting one       
+         of the following:                                                      
+         (                                                                      
+                                                                                
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+16/2     PLS-00103: Encountered the symbol "IF" when expecting one of the       
+         following:                                                             
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "IF" to continue.               
+                                                                                
+17/7     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+17/73    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+                                                                                
+19/12    PLS-00103: Encountered the symbol "=" when expecting one of the        
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         following:                                                             
+         ( - + all case mod new null <an identifier>                            
+         <a double-quoted delimited-identifier> <a bind variable>               
+         continue any avg count current max min prior some sql stddev           
+         sum variance execute forall merge time timestamp interval              
+         date <a string literal with character set specification>               
+         <a number> <a single-quoted SQL string> pipe                           
+         <an alternatively-quoted string literal with character set             
+         specification>                                                         
+         <an alternative                                                        
+                                                                                
+SQL> select calcSalaryRaise('Stone',2) from Dual;
+
+CALCSALARYRAISE('STONE',2)                                                      
+--------------------------                                                      
+                       100                                                      
+
+SQL> select calcSalaryRaise('Stone',400) from Dual;
+
+CALCSALARYRAISE('STONE',400)                                                    
+----------------------------                                                    
+                       20000                                                    
+
+SQL> select calcSalaryRaise('efefefe',2) from Dual;
+select calcSalaryRaise('efefefe',2) from Dual
+       *
+ERROR at line 1:
+ORA-06503: PL/SQL: Function returned without value 
+ORA-06512: at "DRAIGOZA.CALCSALARYRAISE", line 31 
+
+
+SQL> Select calcSalaryRaise('ewefewf',2) from Dual;
+Select calcSalaryRaise('ewefewf',2) from Dual
+       *
+ERROR at line 1:
+ORA-06503: PL/SQL: Function returned without value 
+ORA-06512: at "DRAIGOZA.CALCSALARYRAISE", line 31 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+4/2      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+4/62     PLS-00103: Encountered the symbol "COMICBOOK" when expecting one       
+         of the following:                                                      
+         (                                                                      
+                                                                                
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+7/2      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+7/60     PLS-00103: Encountered the symbol "CUSTOMER1" when expecting one       
+         of the following:                                                      
+         (                                                                      
+                                                                                
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+16/2     PLS-00103: Encountered the symbol "IF" when expecting one of the       
+         following:                                                             
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "IF" to continue.               
+                                                                                
+17/7     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+17/73    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+                                                                                
+18/12    PLS-00103: Encountered the symbol "=" when expecting one of the        
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         following:                                                             
+         ( - + all case mod new null <an identifier>                            
+         <a double-quoted delimited-identifier> <a bind variable>               
+         continue any avg count current max min prior some sql stddev           
+         sum variance execute forall merge time timestamp interval              
+         date <a string literal with character set specification>               
+         <a number> <a single-quoted SQL string> pipe                           
+         <an alternatively-quoted string literal with character set             
+         specification>                                                         
+         <an alternative                                                        
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+4/2      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+4/62     PLS-00103: Encountered the symbol "COMICBOOK" when expecting one       
+         of the following:                                                      
+         (                                                                      
+                                                                                
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+7/2      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+7/60     PLS-00103: Encountered the symbol "CUSTOMER1" when expecting one       
+         of the following:                                                      
+         (                                                                      
+                                                                                
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+16/2     PLS-00103: Encountered the symbol "IF" when expecting one of the       
+         following:                                                             
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "IF" to continue.               
+                                                                                
+17/7     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+17/73    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+                                                                                
+18/12    PLS-00103: Encountered the symbol "=" when expecting one of the        
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         following:                                                             
+         ( - + all case mod new null <an identifier>                            
+         <a double-quoted delimited-identifier> <a bind variable>               
+         continue any avg count current max min prior some sql stddev           
+         sum variance execute forall merge time timestamp interval              
+         date <a string literal with character set specification>               
+         <a number> <a single-quoted SQL string> pipe                           
+         <an alternatively-quoted string literal with character set             
+         specification>                                                         
+         <an alternative                                                        
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+40/7     PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         constant exception <an identifier>                                     
+         <a double-quoted delimited-identifier> table long double ref           
+         char time timestamp interval date binary national character            
+         nchar                                                                  
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+41/1     PLS-00103: Encountered the symbol "END" when expecting one of the      
+         following:                                                             
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior external language                                         
+         The symbol "external was inserted before "END" to continue.            
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+41/1     PLS-00103: Encountered the symbol "END" when expecting one of the      
+         following:                                                             
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior external language                                         
+         The symbol "external was inserted before "END" to continue.            
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+42/1     PLS-00103: Encountered the symbol "END" when expecting one of the      
+         following:                                                             
+         ( begin case declare exit for goto if loop mod null pragma             
+         raise return select update while with <an identifier>                  
+         <a double-quoted delimited-identifier> <a bind variable> <<            
+         continue close current delete fetch lock insert open rollback          
+         savepoint set sql execute commit forall merge pipe purge               
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+4/1      PLS-00428: an INTO clause is expected in this SELECT statement         
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+4/1      PL/SQL: SQL Statement ignored                                          
+4/15     PLS-00201: identifier 'TESTCASE' must be declared                      
+4/24     PL/SQL: ORA-00904: : invalid identifier                                
+SQL> no_Cop ComicBook.no_Copies%type;
+SP2-0734: unknown command beginning "no_Cop Com..." - rest of line ignored.
+SQL> no_Cop ComicBook.no_Copies%type;
+SP2-0734: unknown command beginning "no_Cop Com..." - rest of line ignored.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+4/10     PLS-00103: Encountered the symbol "ITEMORDER" when expecting one       
+         of the following:                                                      
+         := . ( @ % ;                                                           
+         The symbol ":=" was substituted for "ITEMORDER" to continue.           
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+4/1      PLS-00428: an INTO clause is expected in this SELECT statement         
+SQL> Select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19           34     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19           14     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19           24     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19           34     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           44     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           16     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+3/1      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior external language                                         
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+43/1     PLS-00103: Encountered the symbol "END" when expecting one of the      
+         following:                                                             
+         ( begin case declare exit for goto if loop mod null pragma             
+         raise return select update while with <an identifier>                  
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <a double-quoted delimited-identifier> <a bind variable> <<            
+         continue close current delete fetch lock insert open rollback          
+         savepoint set sql execute commit forall merge pipe purge               
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+46/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         ( begin case declare end exception exit for goto if loop mod           
+         null pragma raise return select update while with                      
+         <an identifier> <a double-quoted delimited-identifier>                 
+         <a bind variable> << continue close current delete fetch lock          
+         insert open rollback savepoint set sql execute commit forall           
+         merge pipe purge                                                       
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+5/1      PLS-00428: an INTO clause is expected in this SELECT statement         
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+5/1      PLS-00428: an INTO clause is expected in this SELECT statement         
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+3/1      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior external language                                         
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+46/1     PLS-00103: Encountered the symbol "END" when expecting one of the      
+         following:                                                             
+         ( begin case declare exit for goto if loop mod null pragma             
+         raise return select update while with <an identifier>                  
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <a double-quoted delimited-identifier> <a bind variable> <<            
+         continue close current delete fetch lock insert open rollback          
+         savepoint set sql execute commit forall merge pipe purge               
+                                                                                
+SQL> 
+SQL> 
+SQL> 
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+4/1      PLS-00428: an INTO clause is expected in this SELECT statement         
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+4/1      PLS-00428: an INTO clause is expected in this SELECT statement         
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> 
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> drop addItemOrder;
+drop addItemOrder
+     *
+ERROR at line 1:
+ORA-00950: invalid DROP option 
+
+
+SQL> drop Procedure additemorder;
+
+Procedure dropped.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+Create /*or Replace*/ Procedure addItemOrder/*(orderId in ItemOrder.orderId%type, ItemId in StoreItems.ItemId%type, custId in Customer1.custId%type, date_of_order in DATE, no_of_items in ItemOrder.no_of_items%type, shipped_Date in DATE) */
+                                *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SP2-0042: unknown command "END" - rest of line ignored.
+Create /*or Replace*/ Procedure addItemOrder/*(orderId in ItemOrder.orderId%type, ItemId in StoreItems.ItemId%type, custId in Customer1.custId%type, date_of_order in DATE, no_of_items in ItemOrder.no_of_items%type, shipped_Date in DATE) */
+                                *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+No errors.
+SQL> drop Procedure additemorder;
+
+Procedure dropped.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+SP2-0042: unknown command "END" - rest of line ignored.
+Create /*or Replace*/ Procedure addItemOrder/*(orderId in ItemOrder.orderId%type, ItemId in StoreItems.ItemId%type, custId in Customer1.custId%type, date_of_order in DATE, no_of_items in ItemOrder.no_of_items%type, shipped_Date in DATE) */
+                                *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_proc.sql;
+  6  
+  7  
+  8  
+  9  C
+ 10  
+SQL> 
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+Create /*or Replace*/ Procedure addItemOrder/*(orderId in ItemOrder.orderId%type, ItemId in StoreItems.ItemId%type, custId in Customer1.custId%type, date_of_order in DATE, no_of_items in ItemOrder.no_of_items%type, shipped_Date in DATE) */
+                                *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SP2-0042: unknown command "END" - rest of line ignored.
+Create /*or Replace*/ Procedure addItemOrder/*(orderId in ItemOrder.orderId%type, ItemId in StoreItems.ItemId%type, custId in Customer1.custId%type, date_of_order in DATE, no_of_items in ItemOrder.no_of_items%type, shipped_Date in DATE) */
+                                *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+No errors.
+SQL> drop procedure test;
+drop procedure test
+*
+ERROR at line 1:
+ORA-04043: object TEST does not exist 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+Create /*or Replace*/ Procedure addItemOrder/*(orderId in ItemOrder.orderId%type, ItemId in StoreItems.ItemId%type, custId in Customer1.custId%type, date_of_order in DATE, no_of_items in ItemOrder.no_of_items%type, shipped_Date in DATE) */
+                                *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SP2-0042: unknown command "END" - rest of line ignored.
+Create /*or Replace*/ Procedure addItemOrder/*(orderId in ItemOrder.orderId%type, ItemId in StoreItems.ItemId%type, custId in Customer1.custId%type, date_of_order in DATE, no_of_items in ItemOrder.no_of_items%type, shipped_Date in DATE) */
+                                *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_proc.sql;
+  6  
+  7  
+  8  
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_proc.sql;
+  6  
+  7  
+  8  
+SQL> spool off;

@@ -1,0 +1,357 @@
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+ALTER TRIGGER gold_trig1 ENABLE
+*
+ERROR at line 1:
+ORA-04080: trigger 'GOLD_TRIG1' does not exist 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+2/5      PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         constant exception <an identifier>                                     
+         <a double-quoted delimited-identifier> table long double ref           
+         char time timestamp interval date binary national character            
+         nchar                                                                  
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+18/11    PLS-00049: bad bind variable 'NEW'                                     
+18/15    PLS-00049: bad bind variable 'CUSTTYPE'                                
+18/15    PLS-00103: Encountered the symbol "" when expecting one of the         
+         following:                                                             
+         . ( * @ % & = - + ; < / > at in is mod remainder not rem               
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || indicator multiset member submultiset           
+         The symbol "*" was substituted for "" to continue.                     
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+18/8     PLS-00103: Encountered the symbol "=" when expecting one of the        
+         following:                                                             
+         := . ( @ % ;                                                           
+                                                                                
+18/10    PLS-00049: bad bind variable 'NEW'                                     
+18/14    PLS-00049: bad bind variable 'CUSTTYPE'                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+18/8     PLS-00103: Encountered the symbol "=" when expecting one of the        
+         following:                                                             
+         := . ( @ % ;                                                           
+         The symbol ":= was inserted before "=" to continue.                    
+                                                                                
+18/13    PLS-00049: bad bind variable 'CUSTTYPE'                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+18/14    PLS-00049: bad bind variable 'CUSTTYPE'                                
+18/14    PLS-00103: Encountered the symbol "" when expecting one of the         
+         following:                                                             
+         . ( * @ % & = - + ; < / > at in is mod remainder not rem               
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || multiset member submultiset                     
+         The symbol "*" was substituted for "" to continue.                     
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+18/14    PLS-00049: bad bind variable 'CUSTTYPE'                                
+18/14    PLS-00103: Encountered the symbol "" when expecting one of the         
+         following:                                                             
+         . ( * @ % & = - + ; < / > at in is mod remainder not rem               
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || multiset member submultiset                     
+         The symbol "*" was substituted for "" to continue.                     
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+21/14    PLS-00049: bad bind variable 'CUSTTYPE'                                
+21/14    PLS-00103: Encountered the symbol "" when expecting one of the         
+         following:                                                             
+         . ( * @ % & = - + ; < / > at in is mod remainder not rem               
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || multiset member submultiset                     
+         The symbol "*" was substituted for "" to continue.                     
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+21/14    PLS-00049: bad bind variable 'CUSTTYPE'                                
+21/14    PLS-00103: Encountered the symbol "" when expecting one of the         
+         following:                                                             
+         . ( * @ % & = - + ; < / > at in is mod remainder not rem               
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || multiset member submultiset                     
+         The symbol "*" was substituted for "" to continue.                     
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+21/14    PLS-00049: bad bind variable 'CUSTTYPE'                                
+21/14    PLS-00103: Encountered the symbol "" when expecting one of the         
+         following:                                                             
+         . ( * @ % & = - + ; < / > at in is mod remainder not rem               
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || multiset member submultiset                     
+         The symbol "*" was substituted for "" to continue.                     
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> 	update ComicBook
+  2  	set no_Copies = (no_Copies - no_of_items1)
+  3  	where ItemId = ItemId1;
+	where ItemId = ItemId1
+	               *
+ERROR at line 3:
+ORA-00904: "ITEMID1": invalid identifier 
+
+
+SQL> 
+SQL> 
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+24/3     PL/SQL: SQL Statement ignored                                          
+25/20    PL/SQL: ORA-00927: missing equal sign                                  
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+27/2     PLS-00103: Encountered the symbol "END" when expecting one of the      
+         following:                                                             
+         ( begin case declare exit for goto if loop mod null pragma             
+         raise return select update while with <an identifier>                  
+         <a double-quoted delimited-identifier> <a bind variable> <<            
+         continue close current delete fetch lock insert open rollback          
+         savepoint set sql execute commit forall merge pipe purge               
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+24/3     PL/SQL: SQL Statement ignored                                          
+25/20    PL/SQL: ORA-00927: missing equal sign                                  
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+27/2     PLS-00103: Encountered the symbol "END" when expecting one of the      
+         following:                                                             
+         ( begin case declare exit for goto if loop mod null pragma             
+         raise return select update while with <an identifier>                  
+         <a double-quoted delimited-identifier> <a bind variable> <<            
+         continue close current delete fetch lock insert open rollback          
+         savepoint set sql execute commit forall merge pipe purge               
+                                                                                
+SQL> 		--update ItemOrder
+SQL> 		--set shipping_Fee := '0'
+SQL> 		--where shipped_Date = NULL;
+SQL> 
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+24/3     PL/SQL: SQL Statement ignored                                          
+25/20    PL/SQL: ORA-00927: missing equal sign                                  
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+24/9     PLS-00103: Encountered the symbol "=" when expecting one of the        
+         following:                                                             
+         := . ( @ % ;                                                           
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+28/2     PLS-00103: Encountered the symbol "END" when expecting one of the      
+         following:                                                             
+         * & = - + ; < / > at in is mod remainder not rem                       
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || multiset member submultiset                     
+         The symbol ";" was substituted for "END" to continue.                  
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+28/3     PL/SQL: SQL Statement ignored                                          
+29/20    PL/SQL: ORA-00927: missing equal sign                                  
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> spool off;

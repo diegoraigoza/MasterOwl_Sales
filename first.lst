@@ -1,0 +1,1211 @@
+SQL> start /home/draigoza/Desktop/MosterOwl_Sales/my_tables.sql
+SP2-0310: unable to open file "/home/draigoza/Desktop/MosterOwl_Sales/my_tables.sql"
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql
+
+Table created.
+
+
+Table created.
+
+create table T-shirt(size char(6))
+              *
+ERROR at line 1:
+ORA-00922: missing or invalid option 
+
+
+create table ItemOrder(no_of_items number, shipped_Date date, orderId varchar(8), date_of_order date, PRIMARY KEY(orderId))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+create table Customer(custId varchar(8), name char(50), phone/email varchar(50), address varchar(50))
+                                                             *
+ERROR at line 1:
+ORA-00902: invalid datatype 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql
+create table StoreItems(ItemId varchar(8), price decimal(10,2), PRIMARY KEY(ItemId))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+create table ComicBook(ISBN number, title varchar(50), published_Date date, no_Copies number NOT NULL, PRIMARY KEY(ISBN))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+create table T-shirt(size char(6))
+              *
+ERROR at line 1:
+ORA-00922: missing or invalid option 
+
+
+create table ItemOrder(no_of_items number, shipped_Date date, orderId varchar(8), date_of_order date, PRIMARY KEY(orderId))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+create table Customer(custId varchar(8), name char(50), phone/email varchar(50), address varchar(50))
+                                                             *
+ERROR at line 1:
+ORA-00902: invalid datatype 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql
+create table StoreItems(ItemId varchar(20), price decimal(10,2), PRIMARY KEY(ItemId))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+create table ComicBook(ISBN number, title varchar(50), published_Date date, no_Copies number NOT NULL CHECK (no_Copies >= 0), PRIMARY KEY(ISBN))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+create table Tshirt(size char(6))
+                    *
+ERROR at line 1:
+ORA-00904: : invalid identifier 
+
+
+create table ItemOrder(no_of_items number, shipped_Date date, orderId varchar(8), date_of_order date, PRIMARY KEY(orderId))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+create table Customer(custId varchar(20), name char(50), phone_email varchar(50), address varchar(50), custType char(6), tax decimal(10,2), total_Cost decimal(10,2))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql
+create table StoreItems(ItemId varchar(20), price decimal(10,2), PRIMARY KEY(ItemId))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+create table ComicBook(ISBN number, title varchar(50), published_Date date, no_Copies number NOT NULL CHECK (no_Copies >= 0), PRIMARY KEY(ISBN))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+
+Table created.
+
+create table ItemOrder(no_of_items number, shipped_Date date, orderId varchar(8), date_of_order date, PRIMARY KEY(orderId))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+create table Customer(custId varchar(20), name char(50), phone_email varchar(50), address varchar(50), custType char(6), tax decimal(10,2), total_Cost decimal(10,2))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+create table Regular(shipping_Fee decimal(10,2))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+create table Gold(annual_Fee decimal(10,2), annual_fee_date date, date_Joined date, discount decimal(10,2))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> \drop StoreItems;
+SP2-0734: unknown command beginning "\drop Stor..." - rest of line ignored.
+SQL> drop table StoreItems;
+
+Table dropped.
+
+SQL> FOREIGN KEY(ItemId) references StoreItems(ItemId)
+SP2-0734: unknown command beginning "FOREIGN KE..." - rest of line ignored.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql
+
+Table dropped.
+
+DROP TABLE Customer
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+
+Table dropped.
+
+
+Table dropped.
+
+DROP TABLE StoreItems
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table created.
+
+create table ComicBook(ItemId varchar(10), ISBN number, title varchar(50), published_Date date, no_Copies number CHECK (no_Copies >= 0), PRIMARY KEY(ISBN), FOREIGN KEY(ItemId) references StoreItems(ItemId)
+                                                                                                                                                                                                            *
+ERROR at line 1:
+ORA-00907: missing right parenthesis 
+
+
+
+Table created.
+
+
+Table created.
+
+create table Customer(custId varchar(20), name varchar(50), phone_email varchar(50), address varchar(50), custType char(10), dateJoined date, PRIMARY KEY(custId))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql
+
+Table dropped.
+
+DROP TABLE Customer
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+
+Table dropped.
+
+DROP TABLE ComicBook
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table dropped.
+
+
+Table created.
+
+create table ComicBook(ItemId varchar(10), ISBN number, title varchar(50), published_Date date, no_Copies number CHECK (no_Copies >= 0), PRIMARY KEY(ISBN), FOREIGN KEY(ItemId) references StoreItems(ItemId)
+                                                                                                                                                                                                            *
+ERROR at line 1:
+ORA-00907: missing right parenthesis 
+
+
+
+Table created.
+
+
+Table created.
+
+create table Customer(custId varchar(20), name varchar(50), phone_email varchar(50), address varchar(50), custType char(10), dateJoined date, PRIMARY KEY(custId))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql
+
+Table dropped.
+
+DROP TABLE Customer1
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table dropped.
+
+DROP TABLE ComicBook
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table dropped.
+
+
+Table created.
+
+create table ComicBook(ItemId varchar(10), ISBN number, title varchar(50), published_Date date, no_Copies number CHECK (no_Copies >= 0), PRIMARY KEY(ISBN), FOREIGN KEY(ItemId) references StoreItems(ItemId)
+                                                                                                                                                                                                            *
+ERROR at line 1:
+ORA-00907: missing right parenthesis 
+
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+DROP TABLE ComicBook
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table dropped.
+
+
+Table created.
+
+create table ComicBook(ItemId varchar(10), ISBN number, title varchar(50), published_Date date, no_Copies number CHECK (no_Copies >= 0), PRIMARY KEY(ISBN), FOREIGN KEY(ItemId) references StoreItems(ItemId)
+                                                                                                                                                                                                            *
+ERROR at line 1:
+ORA-00907: missing right parenthesis 
+
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+DROP TABLE ComicBook
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+insert into ItemOrder('201', '001', '301', '1', '2019-01-03', '2019-01-01', '34.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('202', '002', '302', '1', '2019-01-23', '2019-01-20', '14.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('203', '003', '303', '1', '2019-02-03', '2019-02-01', '24.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('204', '004', '304', '1', '2019-03-14', '2019-03-13', '34.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('205', '005', '305', '1', '2019-04-19', '2019-04-16', '44.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('206', '006', '306', '1', '2019-05-12', '2019-05-11', '16.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into Customer1('401', 'Bob Din', 'bob@yoyo.com', 'SJ', 'regular', '2019-01-01')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into Customer1('402', 'Nick Kniveton', 'hubby@yoyo.com', 'Napa', 'gold', '2019-01-02')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into Customer1('403', 'Jane Lane', 'jane@yoyo.com', 'SF', 'regular', '2019-04-02')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+insert into ItemOrder('201', '001', '301', '1', '2019-01-03', '2019-01-01', '34.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('202', '002', '302', '1', '2019-01-23', '2019-01-20', '14.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('203', '003', '303', '1', '2019-02-03', '2019-02-01', '24.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('204', '004', '304', '1', '2019-03-14', '2019-03-13', '34.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('205', '005', '305', '1', '2019-04-19', '2019-04-16', '44.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('206', '006', '306', '1', '2019-05-12', '2019-05-11', '16.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into Customer1('401', 'Bob Din', 'bob@yoyo.com', 'SJ', 'regular', '2019-01-01')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into Customer1('402', 'Nick Kniveton', 'hubby@yoyo.com', 'Napa', 'gold', '2019-01-02')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into Customer1('403', 'Jane Lane', 'jane@yoyo.com', 'SF', 'regular', '2019-04-02')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+insert into ItemOrder('201', '001', '301', '1', '2019-01-03', '2019-01-01', '34.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('202', '002', '302', '1', '2019-01-23', '2019-01-20', '14.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('203', '003', '303', '1', '2019-02-03', '2019-02-01', '24.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('204', '004', '304', '1', '2019-03-14', '2019-03-13', '34.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('205', '005', '305', '1', '2019-04-19', '2019-04-16', '44.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into ItemOrder('206', '006', '306', '1', '2019-05-12', '2019-05-11', '16.00')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into Customer1('401', 'Bob Din', 'bob@yoyo.com', 'SJ', 'regular', '2019-01-01')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into Customer1('402', 'Nick Kniveton', 'hubby@yoyo.com', 'Napa', 'gold', '2019-01-02')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+insert into Customer1('403', 'Jane Lane', 'jane@yoyo.com', 'SF', 'regular', '2019-04-02')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+insert into ItemOrder values('201', '001', '301', '1', '2019-01-03', '2019-01-01', '34.00')
+                                                       *
+ERROR at line 1:
+ORA-01861: literal does not match format string 
+
+
+insert into ItemOrder values('202', '002', '302', '1', '2019-01-23', '2019-01-20', '14.00')
+                                                       *
+ERROR at line 1:
+ORA-01861: literal does not match format string 
+
+
+insert into ItemOrder values('203', '003', '303', '1', '2019-02-03', '2019-02-01', '24.00')
+                                                       *
+ERROR at line 1:
+ORA-01861: literal does not match format string 
+
+
+insert into ItemOrder values('204', '004', '304', '1', '2019-03-14', '2019-03-13', '34.00')
+                                                       *
+ERROR at line 1:
+ORA-01861: literal does not match format string 
+
+
+insert into ItemOrder values('205', '005', '305', '1', '2019-04-19', '2019-04-16', '44.00')
+                                                       *
+ERROR at line 1:
+ORA-01861: literal does not match format string 
+
+
+insert into ItemOrder values('206', '006', '306', '1', '2019-05-12', '2019-05-11', '16.00')
+                                                       *
+ERROR at line 1:
+ORA-01861: literal does not match format string 
+
+
+insert into Customer1 values('401', 'Bob Din', 'bob@yoyo.com', 'SJ', 'regular', '2019-01-01')
+                                                                                *
+ERROR at line 1:
+ORA-01861: literal does not match format string 
+
+
+insert into Customer1 values('402', 'Nick Kniveton', 'hubby@yoyo.com', 'Napa', 'gold', '2019-01-02')
+                                                                                       *
+ERROR at line 1:
+ORA-01861: literal does not match format string 
+
+
+insert into Customer1 values('403', 'Jane Lane', 'jane@yoyo.com', 'SF', 'regular', '2019-04-02')
+                                                                                   *
+ERROR at line 1:
+ORA-01861: literal does not match format string 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+insert into ItemOrder values('201', '001', '301', '1', to_date('20190103','YYYYMMDD'), to_date('20190102','YYYYMMDD'), '34.00')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (DRAIGOZA.SYS_C00753782) violated - parent key 
+not found 
+
+
+insert into ItemOrder values('202', '002', '302', '1', to_date('20190123','YYYYMMDD'), to_date('20190120','YYYYMMDD'), '14.00')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (DRAIGOZA.SYS_C00753782) violated - parent key 
+not found 
+
+
+insert into ItemOrder values('203', '003', '303', '1', to_date('20190203','YYYYMMDD'), to_date('20190201','YYYYMMDD'), '24.00')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (DRAIGOZA.SYS_C00753782) violated - parent key 
+not found 
+
+
+insert into ItemOrder values('204', '004', '304', '1', to_date('20190313','YYYYMMDD'), to_date('20190312','YYYYMMDD'), '34.00')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (DRAIGOZA.SYS_C00753782) violated - parent key 
+not found 
+
+
+insert into ItemOrder values('205', '005', '305', '1', to_date('20190419','YYYYMMDD'), to_date('20190416','YYYYMMDD'), '44.00')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (DRAIGOZA.SYS_C00753782) violated - parent key 
+not found 
+
+
+insert into ItemOrder values('206', '006', '306', '1', to_date('20190512','YYYYMMDD'), to_date('20190511','YYYYMMDD'), '16.00')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (DRAIGOZA.SYS_C00753782) violated - parent key 
+not found 
+
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> insert into Customer1 values('401', 'Bob Din', 'bob@yoyo.com', 'SJ', 'regular', to_date('20190101','YYYYMMDD'));
+insert into Customer1 values('401', 'Bob Din', 'bob@yoyo.com', 'SJ', 'regular', to_date('20190101','YYYYMMDD'))
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00753783) violated 
+
+
+SQL> insert into Customer1 values('402', 'Nick Kniveton', 'hubby@yoyo.com', 'Napa', 'gold', to_date('20190102','YYYYMMDD'));
+insert into Customer1 values('402', 'Nick Kniveton', 'hubby@yoyo.com', 'Napa', 'gold', to_date('20190102','YYYYMMDD'))
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00753783) violated 
+
+
+SQL> insert into Customer1 values('403', 'Jane Lane', 'jane@yoyo.com', 'SF', 'regular', to_date('20190103','YYYYMMDD'));
+insert into Customer1 values('403', 'Jane Lane', 'jane@yoyo.com', 'SF', 'regular', to_date('20190103','YYYYMMDD'))
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00753783) violated 
+
+
+SQL> insert into Customer1 values('401', 'Bob Din', 'bob@yoyo.com', 'SJ', 'regular', to_date('20190101','YYYYMMDD'));
+insert into Customer1 values('401', 'Bob Din', 'bob@yoyo.com', 'SJ', 'regular', to_date('20190101','YYYYMMDD'))
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00753783) violated 
+
+
+SQL> insert into Customer1 values('402', 'Nick Kniveton', 'hubby@yoyo.com', 'Napa', 'gold', to_date('20190102','YYYYMMDD'));
+insert into Customer1 values('402', 'Nick Kniveton', 'hubby@yoyo.com', 'Napa', 'gold', to_date('20190102','YYYYMMDD'))
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00753783) violated 
+
+
+SQL> insert into Customer1 values('403', 'Jane Lane', 'jane@yoyo.com', 'SF', 'regular', to_date('20190103','YYYYMMDD'));
+insert into Customer1 values('403', 'Jane Lane', 'jane@yoyo.com', 'SF', 'regular', to_date('20190103','YYYYMMDD'))
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00753783) violated 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> spool off;

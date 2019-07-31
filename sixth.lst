@@ -1,0 +1,2667 @@
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19           34     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19           14     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19           24     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19           34     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           44     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           16     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+insert into StoreItems values('001', '30.03')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757840) violated 
+
+
+insert into StoreItems values('002', '35.20')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757840) violated 
+
+
+insert into StoreItems values('003', '1.50')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757840) violated 
+
+
+insert into StoreItems values('004', '78.55')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757840) violated 
+
+
+insert into StoreItems values('005', '109.66')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757840) violated 
+
+
+insert into StoreItems values('006', '23.97')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757840) violated 
+
+
+insert into ComicBook values('001', '100','enders game', to_date('19990601','YYYYMMDD'), '4')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757842) violated 
+
+
+insert into ComicBook values('002', '101','the bible', to_date('19820101','YYYYMMDD'), '34')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757842) violated 
+
+
+insert into ComicBook values('003', '102','investing 101',to_date('19990313','YYYYMMDD'), '54')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757842) violated 
+
+
+insert into ComicBook values('004', '103','bob the builder', to_date('19990101','YYYYMMDD'), '104')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757842) violated 
+
+
+
+1 row created.
+
+
+1 row created.
+
+insert into Customer1 values('401', 'Bob Din', 'bob@yoyo.com', 'SJ', 'regular', to_date('20190101','YYYYMMDD'))
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757847) violated 
+
+
+insert into Customer1 values('402', 'Nick Kniveton', 'hubby@yoyo.com', 'Napa', 'gold', to_date('20190102','YYYYMMDD'))
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757847) violated 
+
+
+insert into Customer1 values('403', 'Jane Lane', 'jane@yoyo.com', 'SF', 'regular', to_date('20190103','YYYYMMDD'))
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757847) violated 
+
+
+insert into ItemOrder values('201', '001', '401', '1', to_date('20190103','YYYYMMDD'), to_date('20190102','YYYYMMDD'), '10.00', '120.00')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757850) violated 
+
+
+insert into ItemOrder values('202', '002', '401', '1', to_date('20190123','YYYYMMDD'), to_date('20190120','YYYYMMDD'), '10.00', '150.00')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757850) violated 
+
+
+insert into ItemOrder values('203', '003', '402', '1', to_date('20190203','YYYYMMDD'), to_date('20190201','YYYYMMDD'), '0.00', '178.00')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757850) violated 
+
+
+insert into ItemOrder values('204', '004', '402', '1', to_date('20190313','YYYYMMDD'), to_date('20190312','YYYYMMDD'), '0.00', '123.45')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757850) violated 
+
+
+insert into ItemOrder values('205', '005', '403', '1', to_date('20190419','YYYYMMDD'), to_date('20190416','YYYYMMDD'), '10.00', '157.00')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757850) violated 
+
+
+insert into ItemOrder values('206', '006', '403', '1', to_date('20190512','YYYYMMDD'), to_date('20190511','YYYYMMDD'), '10.00', '245.00')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00757850) violated 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+where custId exists
+             *
+ERROR at line 3:
+ORA-00920: invalid relational operator 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+where address < sysdate
+      *
+ERROR at line 3:
+ORA-01858: a non-numeric character was found where a numeric was expected 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql
+where address > 0
+      *
+ERROR at line 3:
+ORA-01722: invalid number 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql
+
+3 rows updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> select * from Customer1;
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+401                  Bob Din                                                    
+bob@yoyo.com                                                                    
+SJ                                                 gold       01-JAN-19         
+                                                                                
+402                  Nick Kniveton                                              
+hubby@yoyo.com                                                                  
+Napa                                               gold       02-JAN-19         
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+                                                                                
+403                  Jane Lane                                                  
+jane@yoyo.com                                                                   
+SF                                                 gold       03-JAN-19         
+                                                                                
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+ALTER TRIGGER gold_trig1 ENABLE
+*
+ERROR at line 1:
+ORA-04080: trigger 'GOLD_TRIG1' does not exist 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+update Customer1
+       *
+ERROR at line 1:
+ORA-04091: table DRAIGOZA.CUSTOMER1 is mutating, trigger/function may not see 
+it 
+ORA-06512: at "DRAIGOZA.GOLD_TRIG1", line 23 
+ORA-04088: error during execution of trigger 'DRAIGOZA.GOLD_TRIG1' 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+update Customer1
+       *
+ERROR at line 1:
+ORA-04091: table DRAIGOZA.CUSTOMER1 is mutating, trigger/function may not see 
+it 
+ORA-06512: at "DRAIGOZA.GOLD_TRIG1", line 23 
+ORA-04088: error during execution of trigger 'DRAIGOZA.GOLD_TRIG1' 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+update Customer1
+       *
+ERROR at line 1:
+ORA-04091: table DRAIGOZA.CUSTOMER1 is mutating, trigger/function may not see 
+it 
+ORA-06512: at "DRAIGOZA.GOLD_TRIG1", line 23 
+ORA-04088: error during execution of trigger 'DRAIGOZA.GOLD_TRIG1' 
+
+
+SQL> select * from Customer1;
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+401                  Bob Din                                                    
+bob@yoyo.com                                                                    
+SJ                                                 regular    01-JAN-19         
+                                                                                
+402                  Nick Kniveton                                              
+hubby@yoyo.com                                                                  
+Napa                                               gold       02-JAN-19         
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+                                                                                
+403                  Jane Lane                                                  
+jane@yoyo.com                                                                   
+SF                                                 regular    03-JAN-19         
+                                                                                
+
+SQL> ALTER TRIGGER gold_trig1 DISABLE;
+
+Trigger altered.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+3 rows updated.
+
+SQL> select * from Customer1;
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+401                  Bob Din                                                    
+bob@yoyo.com                                                                    
+SJ                                                 gold       01-JAN-19         
+                                                                                
+402                  Nick Kniveton                                              
+hubby@yoyo.com                                                                  
+Napa                                               gold       02-JAN-19         
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+                                                                                
+403                  Jane Lane                                                  
+jane@yoyo.com                                                                   
+SF                                                 gold       03-JAN-19         
+                                                                                
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+3 rows updated.
+
+SQL> select * from Customer1;
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+401                  Bob Din                                                    
+bob@yoyo.com                                                                    
+SJ                                                 regular    01-JAN-19         
+                                                                                
+402                  Nick Kniveton                                              
+hubby@yoyo.com                                                                  
+Napa                                               regular    02-JAN-19         
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+                                                                                
+403                  Jane Lane                                                  
+jane@yoyo.com                                                                   
+SF                                                 regular    03-JAN-19         
+                                                                                
+
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+update Customer1
+       *
+ERROR at line 1:
+ORA-04091: table DRAIGOZA.CUSTOMER1 is mutating, trigger/function may not see 
+it 
+ORA-06512: at "DRAIGOZA.GOLD_TRIG1", line 23 
+ORA-04088: error during execution of trigger 'DRAIGOZA.GOLD_TRIG1' 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+40/3     PL/SQL: SQL Statement ignored                                          
+42/18    PLS-00049: bad bind variable 'NEW'                                     
+42/22    PLS-00049: bad bind variable 'CUSTID'                                  
+42/23    PL/SQL: ORA-00933: SQL command not properly ended                      
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> 	custT Customer1.custType%type;
+SP2-0734: unknown command beginning "custT Cust..." - rest of line ignored.
+SQL> 	custId2 Customer1.custId%type;
+SP2-0734: unknown command beginning "custId2 Cu..." - rest of line ignored.
+SQL> 
+SQL> 
+SQL> 
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> select * from Customer1;
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+401                  Bob Din                                                    
+bob@yoyo.com                                                                    
+SJ                                                 regular    01-JAN-19         
+                                                                                
+402                  Nick Kniveton                                              
+hubby@yoyo.com                                                                  
+Napa                                               regular    02-JAN-19         
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+                                                                                
+403                  Jane Lane                                                  
+jane@yoyo.com                                                                   
+SF                                                 regular    03-JAN-19         
+                                                                                
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+update Customer1
+       *
+ERROR at line 1:
+ORA-04092: cannot COMMIT in a trigger 
+ORA-06512: at "DRAIGOZA.GOLD_TRIG1", line 67 
+ORA-04088: error during execution of trigger 'DRAIGOZA.GOLD_TRIG1' 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> select * from Customer1;
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+401                  Bob Din                                                    
+bob@yoyo.com                                                                    
+SJ                                                 regular    01-JAN-19         
+                                                                                
+402                  Nick Kniveton                                              
+hubby@yoyo.com                                                                  
+Napa                                               regular    02-JAN-19         
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+                                                                                
+403                  Jane Lane                                                  
+jane@yoyo.com                                                                   
+SF                                                 regular    03-JAN-19         
+                                                                                
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19            0     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19            0     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19            0     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19            0     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+34/3     PL/SQL: SQL Statement ignored                                          
+36/21    PL/SQL: ORA-00933: SQL command not properly ended                      
+36/21    PLS-00049: bad bind variable 'CUSTID'                                  
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19            0     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19            0     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19            0     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19            0     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19            0     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19            0     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19            0     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19            0     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+34/3     PL/SQL: SQL Statement ignored                                          
+36/46    PL/SQL: ORA-00907: missing right parenthesis                           
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19            0     
+       120                                                                      
+                                                                                
+202      002        401                  1           20-JAN-19            0     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19           10     
+       120                                                                      
+                                                                                
+202      002        401                  1 06-JUN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19            0     
+       120                                                                      
+                                                                                
+202      002        401                  1 06-JUN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> ALTER TRIGGER gold_trig1 ENABLE;
+
+Trigger altered.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19            0     
+       120                                                                      
+                                                                                
+202      002        401                  1 06-JUN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/test_Sales.sql;
+
+1 row updated.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1           02-JAN-19            0     
+       120                                                                      
+                                                                                
+202      002        401                  1 06-JUN-19 20-JAN-19           10     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19            0     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19            0     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           10     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           10     
+       245                                                                      
+                                                                                
+
+6 rows selected.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+38/3     PL/SQL: SQL Statement ignored                                          
+40/46    PL/SQL: ORA-00920: invalid relational operator                         
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+38/3     PL/SQL: SQL Statement ignored                                          
+40/46    PL/SQL: ORA-00920: invalid relational operator                         
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> spool off;

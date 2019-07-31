@@ -1,0 +1,1303 @@
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+Create /*or Replace*/ Procedure addItemOrder/*(orderId in ItemOrder.orderId%type, ItemId in StoreItems.ItemId%type, custId in Customer1.custId%type, date_of_order in DATE, no_of_items in ItemOrder.no_of_items%type, shipped_Date in DATE) */
+                                *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SP2-0042: unknown command "END" - rest of line ignored.
+Create /*or Replace*/ Procedure addItemOrder/*(orderId in ItemOrder.orderId%type, ItemId in StoreItems.ItemId%type, custId in Customer1.custId%type, date_of_order in DATE, no_of_items in ItemOrder.no_of_items%type, shipped_Date in DATE) */
+                                *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+5/2      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+5/62     PLS-00103: Encountered the symbol "COMICBOOK" when expecting one       
+         of the following:                                                      
+         (                                                                      
+                                                                                
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+8/2      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+8/60     PLS-00103: Encountered the symbol "CUSTOMER1" when expecting one       
+         of the following:                                                      
+         (                                                                      
+                                                                                
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+17/6     PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         ( begin case declare exit for goto if loop mod null pragma             
+         raise return select update while with <an identifier>                  
+         <a double-quoted delimited-identifier> <a bind variable> <<            
+         continue close current delete fetch lock insert open rollback          
+         savepoint set sql execute commit forall merge pipe purge               
+         The symbol "exit" was substituted for ";" to continue.                 
+                                                                                
+19/7     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+19/73    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+                                                                                
+20/12    PLS-00103: Encountered the symbol "=" when expecting one of the        
+         following:                                                             
+         ( - + all case mod new null <an identifier>                            
+         <a double-quoted delimited-identifier> <a bind variable>               
+         continue any avg count current max min prior some sql stddev           
+         sum variance execute forall merge time timestamp interval              
+         date <a string literal with character set specification>               
+         <a number> <a single-quoted SQL string> pipe                           
+         <an alternatively-quoted string literal with character set             
+         specification>                                                         
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <an alternative                                                        
+                                                                                
+SQL> /*(orderId in ItemOrder.orderId%type, ItemId in StoreItems.ItemId%type, custId in Customer1.custId%type, date_of_order in DATE, no_of_items in
+SQL> 
+SQL> 
+SQL> f
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+SQL> 
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+SQL> 
+SQL> show errors;
+SQL> 
+SQL> ewe
+SQL> select * from go;
+SQL> 
+SQL> 
+SQL> 
+SQL> select * from go;
+select * from go
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/39     PLS-00103: Encountered the symbol "(" when expecting one of the        
+         following:                                                             
+         := . ) , @ % default character                                         
+         The symbol ":=" was substituted for "(" to continue.                   
+                                                                                
+34/2     PLS-00103: Encountered the symbol "WHERE" when expecting one of        
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior external language                                         
+                                                                                
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+34/34    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * @ % & - + / at for mod remainder rem <an exponent (**)>          
+         and or group having intersect minus order start union where            
+         connect || multiset                                                    
+                                                                                
+46/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/39     PLS-00103: Encountered the symbol "(" when expecting one of the        
+         following:                                                             
+         := . ) , @ % default character                                         
+         The symbol ":=" was substituted for "(" to continue.                   
+                                                                                
+45/7     PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         constant exception <an identifier>                                     
+         <a double-quoted delimited-identifier> table long double ref           
+         char time timestamp interval date binary national character            
+         nchar                                                                  
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+5/2      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+5/62     PLS-00103: Encountered the symbol "COMICBOOK" when expecting one       
+         of the following:                                                      
+         (                                                                      
+                                                                                
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+8/2      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+8/60     PLS-00103: Encountered the symbol "CUSTOMER1" when expecting one       
+         of the following:                                                      
+         (                                                                      
+                                                                                
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+43/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         ( begin case declare end exception exit for goto if loop mod           
+         null pragma raise return select update while with                      
+         <an identifier> <a double-quoted delimited-identifier>                 
+         <a bind variable> << continue close current delete fetch lock          
+         insert open rollback savepoint set sql execute commit forall           
+         merge pipe purge                                                       
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+5/2      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+7/8      PLS-00103: Encountered the symbol "CUSTOMER1" when expecting one       
+         of the following:                                                      
+         := . ( @ % ;                                                           
+         The symbol ":=" was substituted for "CUSTOMER1" to continue.           
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+                                                                                
+8/60     PLS-00103: Encountered the symbol "CUSTOMER1" when expecting one       
+         of the following:                                                      
+         (                                                                      
+                                                                                
+43/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         ( begin case declare end exception exit for goto if loop mod           
+         null pragma raise return select update while with                      
+         <an identifier> <a double-quoted delimited-identifier>                 
+         <a bind variable> << continue close current delete fetch lock          
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         insert open rollback savepoint set sql execute commit forall           
+         merge pipe purge                                                       
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+5/2      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "begin" was substituted for "SELECT" to continue.           
+                                                                                
+43/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         ( begin case declare end exception exit for goto if loop mod           
+         null pragma raise return select update while with                      
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <an identifier> <a double-quoted delimited-identifier>                 
+         <a bind variable> << continue close current delete fetch lock          
+         insert open rollback savepoint set sql execute commit forall           
+         merge pipe purge                                                       
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+13/2     PL/SQL: SQL Statement ignored                                          
+13/60    PL/SQL: ORA-00904: "CUSTOMER1": invalid identifier                     
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+19/6     PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         ( begin case declare exit for goto if loop mod null pragma             
+         raise return select update while with <an identifier>                  
+         <a double-quoted delimited-identifier> <a bind variable> <<            
+         continue close current delete fetch lock insert open rollback          
+         savepoint set sql execute commit forall merge pipe purge               
+         The symbol "exit" was substituted for ";" to continue.                 
+                                                                                
+21/6     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+21/72    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+                                                                                
+45/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+19/6     PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         ( begin case declare exit for goto if loop mod null pragma             
+         raise return select update while with <an identifier>                  
+         <a double-quoted delimited-identifier> <a bind variable> <<            
+         continue close current delete fetch lock insert open rollback          
+         savepoint set sql execute commit forall merge pipe purge               
+         The symbol "exit" was substituted for ";" to continue.                 
+                                                                                
+45/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         ( begin case declare end exception exit for goto if loop mod           
+         null pragma raise return select update while with                      
+         <an identifier> <a double-quoted delimited-identifier>                 
+         <a bind variable> << continue close current delete fetch lock          
+         insert open rollback savepoint set sql execute commit forall           
+         merge pipe purge                                                       
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+20/6     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+20/72    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+                                                                                
+44/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+20/6     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+20/72    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+                                                                                
+44/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> 
+SQL> 
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+20/6     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+20/72    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+                                                                                
+44/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+21/6     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+21/72    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+                                                                                
+45/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+23/6     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+23/72    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+                                                                                
+47/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+23/6     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+23/72    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+                                                                                
+47/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+23/6     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+23/72    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+                                                                                
+47/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+23/6     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+23/72    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+                                                                                
+47/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+46/1     PLS-00103: Encountered the symbol "COMMIT" when expecting one of       
+         the following:                                                         
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+23/2     PLS-00103: Encountered the symbol "BWGIN" when expecting one of        
+         the following:                                                         
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+                                                                                
+25/2     PLS-00103: Encountered the symbol "END" when expecting one of the      
+         following:                                                             
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         exists prior                                                           
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+23/2     PLS-00103: Encountered the symbol "BEGIN" when expecting one of        
+         the following:                                                         
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "then" was substituted for "BEGIN" to continue.             
+                                                                                
+49/4     PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         if                                                                     
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/39     PLS-00103: Encountered the symbol "(" when expecting one of the        
+         following:                                                             
+         := . ) , @ % default character                                         
+         The symbol ":=" was substituted for "(" to continue.                   
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/24     PLS-00103: Encountered the symbol "@" when expecting one of the        
+         following:                                                             
+         ( ; is with authid as cluster compress order using compiled            
+         wrapped external deterministic parallel_enable pipelined               
+         result_cache                                                           
+         The symbol "is was inserted before "@" to continue.                    
+                                                                                
+7/1      PLS-00103: Encountered the symbol "AS" when expecting one of the       
+         following:                                                             
+         := ; not null default character                                        
+                                                                                
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+54/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+16/2     PL/SQL: SQL Statement ignored                                          
+16/61    PL/SQL: ORA-00904: "ITEMID1": invalid identifier                       
+17/2     PL/SQL: SQL Statement ignored                                          
+17/59    PL/SQL: ORA-00904: "CUSTID1": invalid identifier                       
+18/2     PL/SQL: SQL Statement ignored                                          
+18/63    PL/SQL: ORA-00904: "ORDERID1": invalid identifier                      
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder;
+BEGIN addItemOrder; END;
+
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7: 
+PLS-00306: wrong number or types of arguments in call to 'ADDITEMORDER' 
+ORA-06550: line 1, column 7: 
+PL/SQL: Statement ignored 
+
+
+SQL> (orderId1 in ItemOrder.orderId%type, ItemId1 in StoreItems.ItemId%type, custId1 in Customer1.custId%type, date_of_order1 in DATE, no_of_items1 in ItemOrder.no_of_items%type, shipped_Date1 in DATE)
+  2  
+SQL> 
+SQL> 
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/40     PLS-00103: Encountered the symbol "(" when expecting one of the        
+         following:                                                             
+         := . ) , @ % default character                                         
+         The symbol ":=" was substituted for "(" to continue.                   
+                                                                                
+1/60     PLS-00103: Encountered the symbol "(" when expecting one of the        
+         following:                                                             
+         := . ) , @ % default character                                         
+         The symbol ":=" was substituted for "(" to continue.                   
+                                                                                
+1/81     PLS-00103: Encountered the symbol "(" when expecting one of the        
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         following:                                                             
+         := . ) , @ % default character                                         
+         The symbol ":=" was substituted for "(" to continue.                   
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/24     PLS-00103: Encountered the symbol "@" when expecting one of the        
+         following:                                                             
+         ( ; is with authid as cluster compress order using compiled            
+         wrapped external deterministic parallel_enable pipelined               
+         result_cache                                                           
+         The symbol "is was inserted before "@" to continue.                    
+                                                                                
+1/44     PLS-00103: Encountered the symbol "," when expecting one of the        
+         following:                                                             
+         := ; not null default character                                        
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/24     PLS-00103: Encountered the symbol "@" when expecting one of the        
+         following:                                                             
+         ( ; is with authid as cluster compress order using compiled            
+         wrapped external deterministic parallel_enable pipelined               
+         result_cache                                                           
+         The symbol "is was inserted before "@" to continue.                    
+                                                                                
+1/46     PLS-00103: Encountered the symbol "@" when expecting one of the        
+         following:                                                             
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         exists prior                                                           
+         The symbol "@" was ignored.                                            
+                                                                                
+1/68     PLS-00103: Encountered the symbol "@" when expecting one of the        
+         following:                                                             
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+         The symbol "@" was ignored.                                            
+                                                                                
+1/90     PLS-00103: Encountered the symbol "@" when expecting one of the        
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         following:                                                             
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior                                                           
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/24     PLS-00103: Encountered the symbol "@" when expecting one of the        
+         following:                                                             
+         ( ; is with authid as cluster compress order using compiled            
+         wrapped external deterministic parallel_enable pipelined               
+         result_cache                                                           
+         The symbol "is was inserted before "@" to continue.                    
+                                                                                
+1/44     PLS-00103: Encountered the symbol "," when expecting one of the        
+         following:                                                             
+         := ; not null default character                                        
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/24     PLS-00103: Encountered the symbol "@" when expecting one of the        
+         following:                                                             
+         ( ; is with authid as cluster compress order using compiled            
+         wrapped external deterministic parallel_enable pipelined               
+         result_cache                                                           
+         The symbol "is was inserted before "@" to continue.                    
+                                                                                
+1/44     PLS-00103: Encountered the symbol "," when expecting one of the        
+         following:                                                             
+         := ; not null default character                                        
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+15/8     PLS-00103: Encountered the symbol "hello world" when expecting         
+         one of the following:                                                  
+         := . ( @ % ;                                                           
+         The symbol "; was inserted before "hello world" to continue.           
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+15/8     PLS-00103: Encountered the symbol "hello world" when expecting         
+         one of the following:                                                  
+         := . ( @ % ;                                                           
+         The symbol "; was inserted before "hello world" to continue.           
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+15/9     PLS-00103: Encountered the symbol "hello world" when expecting         
+         one of the following:                                                  
+         := . ( @ % ;                                                           
+         The symbol "; was inserted before "hello world" to continue.           
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+16/8     PLS-00103: Encountered the symbol "This message was printed on "       
+         when expecting one of the following:                                   
+         := . ( @ % ;                                                           
+         The symbol "; was inserted before "This message was printed on "       
+         to continue.                                                           
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+17/8     PLS-00103: Encountered the symbol "this is a test message" when        
+         expecting one of the following:                                        
+         := . ( @ % ;                                                           
+         The symbol ":=" was substituted for "this is a test message" to        
+         continue.                                                              
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL>     	--dbms_output.put_line('Error: Not enough ComicBooks for ItemOrder');
+SQL> 
+SQL> 
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+17/3     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+17/34    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+                                                                                
+57/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+17/3     PLS-00103: Encountered the symbol "DBMS_OUTPUT" when expecting         
+         one of the following:                                                  
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "*" was substituted for "DBMS_OUTPUT" to continue.          
+                                                                                
+17/34    PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         . ( * % & = - + < / > at in is mod remainder not rem then              
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || member submultiset                              
+                                                                                
+57/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+17/2     PLS-00103: Encountered the symbol "BEGIN" when expecting one of        
+         the following:                                                         
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "then" was substituted for "BEGIN" to continue.             
+                                                                                
+59/4     PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         if                                                                     
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+17/2     PLS-00103: Encountered the symbol "BEGIN" when expecting one of        
+         the following:                                                         
+         * & = - + < / > at in is mod remainder not rem then                    
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between overlaps || multiset year day member               
+         submultiset                                                            
+         The symbol "then" was substituted for "BEGIN" to continue.             
+                                                                                
+59/4     PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         if                                                                     
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+17/2     PLS-00103: Encountered the symbol "BEGIN" when expecting one of        
+         the following:                                                         
+         * & - + / at mod remainder rem then <an exponent (**)> and or          
+         || multiset                                                            
+         The symbol "then" was substituted for "BEGIN" to continue.             
+                                                                                
+59/4     PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         if                                                                     
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+20/1     PL/SQL: SQL Statement ignored                                          
+20/10    PL/SQL: ORA-00923: FROM keyword not found where expected               
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder;
+BEGIN addItemOrder; END;
+
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7: 
+PLS-00306: wrong number or types of arguments in call to 'ADDITEMORDER' 
+ORA-06550: line 1, column 7: 
+PL/SQL: Statement ignored 
+
+
+SQL> exec addItemOrder orderId1 = '1111111', ItemId1 = '2222222222', custId = 'gold',
+BEGIN addItemOrder orderId1 = '1111111', ItemId1 = '2222222222', custId = 'gold',; END;
+
+                   *
+ERROR at line 1:
+ORA-06550: line 1, column 20: 
+PLS-00103: Encountered the symbol "ORDERID1" when expecting one of the 
+following: 
+:= . ( @ % ; 
+The symbol "(" was substituted for "ORDERID1" to continue. 
+ORA-06550: line 1, column 82: 
+PLS-00103: Encountered the symbol ";" when expecting one of the following: 
+( - + case mod new not null <an identifier> 
+<a double-quoted delimited-identifier> <a bind variable> 
+continue avg count current exists max min prior sql  
+
+
+SQL> 
+SQL> 
+SQL> exec addItemOrder orderId1 = '1111111', ItemId1 = '2222222222', custId1 = '56', date_of_order1 = '21-APR-19', no_of_items1 = '4', shipped_Date1 = '21-APR-19';
+BEGIN addItemOrder orderId1 = '1111111', ItemId1 = '2222222222', custId1 = '56', date_of_order1 = '21-APR-19', no_of_items1 = '4', shipped_Date1 = '21-APR-19'; END;
+
+                   *
+ERROR at line 1:
+ORA-06550: line 1, column 20: 
+PLS-00103: Encountered the symbol "ORDERID1" when expecting one of the 
+following: 
+:= . ( @ % ; 
+The symbol "(" was substituted for "ORDERID1" to continue. 
+ORA-06550: line 1, column 159: 
+PLS-00103: Encountered the symbol ";" when expecting one of the following: 
+) , * & - + / at mod remainder rem <an exponent (**)> and or 
+|| multiset 
+The symbol ")" was substituted for ";" to continue. 
+
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/24     PLS-00103: Encountered the symbol "@" when expecting one of the        
+         following:                  

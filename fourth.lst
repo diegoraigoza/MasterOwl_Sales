@@ -1,0 +1,817 @@
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder;
+
+PL/SQL procedure successfully completed.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/24     PLS-00103: Encountered the symbol "@" when expecting one of the        
+         following:                                                             
+         ( ; is with authid as cluster compress order using compiled            
+         wrapped external deterministic parallel_enable pipelined               
+         result_cache                                                           
+         The symbol "is was inserted before "@" to continue.                    
+                                                                                
+6/1      PLS-00103: Encountered the symbol "AS" when expecting one of the       
+         following:                                                             
+         := ; not null default character                                        
+                                                                                
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+95/4     PLS-00103: Encountered the symbol "end-of-file" when expecting         
+         one of the following:                                                  
+         end not pragma final instantiable order overriding static              
+         member constructor map                                                 
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/40     PLS-00103: Encountered the symbol "(" when expecting one of the        
+         following:                                                             
+         := . ) , @ % default character                                         
+         The symbol ":=" was substituted for "(" to continue.                   
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('gh','yo','test');
+
+PL/SQL procedure successfully completed.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('gh','yo','test','20190304')
+BEGIN addItemOrder('gh','yo','test','20190304'); END;
+
+*
+ERROR at line 1:
+ORA-01861: literal does not match format string 
+ORA-06512: at line 1 
+
+
+SQL> exec addItemOrder('gh','yo','test','20190304');
+BEGIN addItemOrder('gh','yo','test','20190304'); END;
+
+*
+ERROR at line 1:
+ORA-01861: literal does not match format string 
+ORA-06512: at line 1 
+
+
+SQL> exec addItemOrder('gh','yo','test','21-APR-19');
+
+PL/SQL procedure successfully completed.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('gh','yo','test','21-APR-19',2);
+
+PL/SQL procedure successfully completed.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('gh','yo','test','21-APR-19',2,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+26/3     PL/SQL: Statement ignored                                              
+26/15    PLS-00302: component 'GETLINE' must be declared                        
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('gh','yo','test','21-APR-19',2,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/my_tables.sql;
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/Store_queries.sql;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('207','001','401','21-DEC-18',10,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('207','001','401','21-DEC-18',10,'21-DEC-18');
+BEGIN addItemOrder('207','001','401','21-DEC-18',10,'21-DEC-18'); END;
+
+*
+ERROR at line 1:
+ORA-20010: Not enough stock for order 
+ORA-06512: at "DRAIGOZA.ADDITEMORDER", line 27 
+ORA-06512: at line 1 
+
+
+SQL> exec addItemOrder('207','001','401','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+47/14    PLS-00103: Encountered the symbol "=" when expecting one of the        
+         following:                                                             
+         := . ( @ % ;                                                           
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+48/2     PLS-00103: Encountered the symbol "ELSE" when expecting one of         
+         the following:                                                         
+         * & = - + ; < / > at in is mod remainder not rem                       
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec between || multiset member submultiset                     
+         The symbol ";" was substituted for "ELSE" to continue.                 
+                                                                                
+50/2     PLS-00103: Encountered the symbol "END" when expecting one of the      
+         following:                                                             
+         * & = - + ; < / > at in is mod remainder not rem                       
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         like4 likec between || multiset member submultiset                     
+         The symbol ";" was substituted for "END" to continue.                  
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('207','001','401','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+201      001        401                  1 03-JAN-19 02-JAN-19           34     
+       120                                                                      
+                                                                                
+202      002        401                  1 23-JAN-19 20-JAN-19           14     
+       150                                                                      
+                                                                                
+203      003        402                  1 03-FEB-19 01-FEB-19           24     
+       178                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+204      004        402                  1 13-MAR-19 12-MAR-19           34     
+    123.45                                                                      
+                                                                                
+205      005        403                  1 19-APR-19 16-APR-19           44     
+       157                                                                      
+                                                                                
+206      006        403                  1 12-MAY-19 11-MAY-19           16     
+       245                                                                      
+                                                                                
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+207      001        401                  4           21-DEC-18            0     
+         0                                                                      
+                                                                                
+
+7 rows selected.
+
+SQL> exec addItemOrder('207','001','401','21-DEC-18',4,'21-DEC-18');
+BEGIN addItemOrder('207','001','401','21-DEC-18',4,'21-DEC-18'); END;
+
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DRAIGOZA.SYS_C00755984) violated 
+ORA-06512: at "DRAIGOZA.ADDITEMORDER", line 53 
+ORA-06512: at line 1 
+
+
+SQL> delete table ItemOrder;
+delete table ItemOrder
+       *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> delete ItemOrder;
+
+7 rows deleted.
+
+SQL> exec addItemOrder('207','001','401','21-DEC-18',4,'21-DEC-18')
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+207      001        401                  4           21-DEC-18            0     
+         0                                                                      
+                                                                                
+
+SQL> exec addItemOrder('208','002','402','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+207      001        401                  4           21-DEC-18            0     
+         0                                                                      
+                                                                                
+208      002        402                  4           21-DEC-18            0     
+         0                                                                      
+                                                                                
+
+SQL> exec addItemOrder('209','003','402','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+207      001        401                  4           21-DEC-18            0     
+         0                                                                      
+                                                                                
+208      002        402                  4           21-DEC-18            0     
+         0                                                                      
+                                                                                
+209      003        402                  4           21-DEC-18            0     
+         0                                                                      
+                                                                                
+
+SQL> delete itemorder;
+
+3 rows deleted.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('207','001','401','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+207      001        401                  4           21-DEC-18           10     
+         0                                                                      
+                                                                                
+
+SQL> delete itemorder;
+
+1 row deleted.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('209','003','402','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+209      003        402                  4           21-DEC-18           10     
+         0                                                                      
+                                                                                
+
+SQL> delete itemorder;
+
+1 row deleted.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('208','002','402','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+208      002        402                  4           21-DEC-18            0     
+         0                                                                      
+                                                                                
+
+SQL> exec addItemOrder('207','001','401','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+208      002        402                  4           21-DEC-18            0     
+         0                                                                      
+                                                                                
+207      001        401                  4           21-DEC-18            0     
+         0                                                                      
+                                                                                
+
+SQL> delete itemorder;
+
+2 rows deleted.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('208','002','402','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+208      002        402                  4           21-DEC-18           10     
+         0                                                                      
+                                                                                
+
+SQL> exec addItemOrder('207','001','401','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+208      002        402                  4           21-DEC-18           10     
+         0                                                                      
+                                                                                
+207      001        401                  4           21-DEC-18           10     
+         0                                                                      
+                                                                                
+
+SQL> select * from Customer1;
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+401                  Bob Din                                                    
+bob@yoyo.com                                                                    
+SJ                                                 regular    01-JAN-19         
+                                                                                
+402                  Nick Kniveton                                              
+hubby@yoyo.com                                                                  
+Napa                                               gold       02-JAN-19         
+
+CUSTID               NAME                                                       
+-------------------- --------------------------------------------------         
+PHONE_EMAIL                                                                     
+--------------------------------------------------                              
+ADDRESS                                            CUSTTYPE   DATEJOINE         
+-------------------------------------------------- ---------- ---------         
+                                                                                
+403                  Jane Lane                                                  
+jane@yoyo.com                                                                   
+SF                                                 regular    03-JAN-19         
+                                                                                
+
+SQL> exec addItemOrder('209','003','403','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+209      003        403                  4           21-DEC-18           10     
+         0                                                                      
+                                                                                
+208      002        402                  4           21-DEC-18           10     
+         0                                                                      
+                                                                                
+207      001        401                  4           21-DEC-18           10     
+         0                                                                      
+                                                                                
+
+SQL> delete itemorder;
+
+3 rows deleted.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('209','003','403','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+209      003        403                  4           21-DEC-18            0     
+         0                                                                      
+                                                                                
+
+SQL> delete itemorder;
+
+1 row deleted.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+46/12    PLS-00103: Encountered the symbol "=" when expecting one of the        
+         following:                                                             
+         ( - + all case mod new null <an identifier>                            
+         <a double-quoted delimited-identifier> <a bind variable>               
+         continue any avg count current max min prior some sql stddev           
+         sum variance execute forall merge time timestamp interval              
+         date <a string literal with character set specification>               
+         <a number> <a single-quoted SQL string> pipe                           
+         <an alternatively-quoted string literal with character set             
+         specification>                                                         
+         <an alternative                                                        
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> delete itemorder;
+
+0 rows deleted.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('207','001','401','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ItemOrder;
+
+ORDERID  ITEMID     CUSTID     NO_OF_ITEMS SHIPPED_D DATE_OF_O SHIPPING_FEE     
+-------- ---------- ---------- ----------- --------- --------- ------------     
+TOTAL_COST                                                                      
+----------                                                                      
+207      001        401                  4           21-DEC-18           10     
+         0                                                                      
+                                                                                
+
+SQL> select * from ComicBook;
+
+ITEMID           ISBN TITLE                                                     
+---------- ---------- --------------------------------------------------        
+PUBLISHED  NO_COPIES                                                            
+--------- ----------                                                            
+001               100 enders game                                               
+01-JUN-99          4                                                            
+                                                                                
+002               101 the bible                                                 
+01-JAN-82         34                                                            
+                                                                                
+003               102 investing 101                                             
+13-MAR-99         54                                                            
+                                                                                
+
+ITEMID           ISBN TITLE                                                     
+---------- ---------- --------------------------------------------------        
+PUBLISHED  NO_COPIES                                                            
+--------- ----------                                                            
+004               103 bob the builder                                           
+01-JAN-99        104                                                            
+                                                                                
+
+SQL> delete itemorder;
+
+1 row deleted.
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE ADDITEMORDER:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+60/2     PL/SQL: SQL Statement ignored                                          
+62/8     PL/SQL: ORA-00904: "ORDERID": invalid identifier                       
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/addItem.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec addItemOrder('207','001','401','21-DEC-18',4,'21-DEC-18');
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from ComicBook;
+
+ITEMID           ISBN TITLE                                                     
+---------- ---------- --------------------------------------------------        
+PUBLISHED  NO_COPIES                                                            
+--------- ----------                                                            
+001               100 enders game                                               
+01-JUN-99          0                                                            
+                                                                                
+002               101 the bible                                                 
+01-JAN-82         34                                                            
+                                                                                
+003               102 investing 101                                             
+13-MAR-99         54                                                            
+                                                                                
+
+ITEMID           ISBN TITLE                                                     
+---------- ---------- --------------------------------------------------        
+PUBLISHED  NO_COPIES                                                            
+--------- ----------                                                            
+004               103 bob the builder                                           
+01-JAN-99        104                                                            
+                                                                                
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+2/2      PL/SQL: Statement ignored                                              
+2/5      PLS-00201: identifier 'CUSTTYPE' must be declared                      
+SQL> select * from dual;
+
+D                                                                               
+-                                                                               
+X                                                                               
+
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+3/1      PLS-00103: Encountered the symbol "EXCEPTION" when expecting one       
+         of the following:                                                      
+         ( begin case declare exit for goto if loop mod null pragma             
+         raise return select update while with <an identifier>                  
+         <a double-quoted delimited-identifier> <a bind variable> <<            
+         continue close current delete fetch lock insert open rollback          
+         savepoint set sql execute commit forall merge pipe purge               
+         The symbol "EXCEPTION" was ignored.                                    
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+4/2      PL/SQL: Statement ignored                                              
+4/5      PLS-00201: identifier 'CUSTTYPE' must be declared                      
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER GOLD_TRIG:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+4/2      PL/SQL: Statement ignored                                              
+4/15     PLS-00357: Table,View Or Sequence reference 'CUSTOMER1.CUSTTYPE'       
+         not allowed in this context                                            
+                                                                                
+SQL> @ /home/draigoza/Desktop/MasterOwl_Sales/gold_trig.sql;
+
+Trigger created.
+
+No errors.
+SQL> spool off;
